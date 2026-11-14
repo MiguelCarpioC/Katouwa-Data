@@ -25,6 +25,18 @@ streamlit run app.py
 
 In the app, choose **Agent-verified NASA output** and click **Run NASA MODIS data agent**, or choose **NASA POWER live**. All API failures remain explicit. A deliberately labelled **SYNTHETIC interface test** is included for an internet-free visual rehearsal. Never use the synthetic mode in judging as NASA evidence.
 
+## Windows (PowerShell)
+
+```powershell
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python run_agents.py --source all --start 2016 --end 2025
+```
+
+If PowerShell blocks `Activate.ps1`, run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once. An error like `_ARRAY_API not found` / `numpy.core.multiarray failed to import` means old SciPy/matplotlib are mixed with NumPy 2: use the virtual environment above (or `pip install --upgrade -r requirements.txt`).
+
 ## Getting MODIS data when ORNL is slow
 
 - `modis.ornl.gov` chains to the public root *emSign Root CA - G1*, which current certifi/Mozilla bundles no longer include. `config/certs/emsign_root_ca_g1.pem` is trusted **only for that host**, and only if its SHA-256 fingerprint matches.

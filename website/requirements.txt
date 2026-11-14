@@ -1,7 +1,10 @@
+# Minimums chosen so every compiled package works with NumPy 2.x
+# (older scipy/matplotlib/pandas wheels crash with "_ARRAY_API not found").
 streamlit>=1.37,<2
-pandas>=2.0,<3
-numpy>=1.24,<3
-scipy>=1.11,<2
+pandas>=2.2.3,<3
+numpy>=2.0,<3
+scipy>=1.16,<2
 plotly>=5.18,<7
 requests>=2.31,<3
-matplotlib>=3.8,<3.11
+matplotlib>=3.10,<4
+certifi>=2024.8.30
