@@ -1,0 +1,46 @@
+{
+  "started_utc": "2026-11-14T22:05:54.555668+00:00",
+  "status": "SUCCESS",
+  "collection_mode": "REAL_REMOTE_NASA_API",
+  "sources_requested": "power",
+  "stages": [
+    {
+      "name": "ResearchPlanner",
+      "status": "OK",
+      "site_count": 2,
+      "years": [
+        2016,
+        2025
+      ]
+    },
+    {
+      "name": "ClimateCollector",
+      "site": "MANGROVE_POINT_1",
+      "status": "OK",
+      "rows": 240
+    },
+    {
+      "name": "QualityStatisticsAgent",
+      "status": "OK",
+      "good_rows": 240
+    },
+    {
+      "name": "Reporter",
+      "status": "OK"
+    }
+  ],
+  "failures": [],
+  "notes": [
+    "No dataset is substituted with synthetic data on download failure"
+  ],
+  "spatial_warning": "USER_SELECTED_MANGROVE_POINTS_NOT_FIELD_VERIFIED",
+  "sources_trace": [
+    {
+      "url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR%2CT2M&community=AG&latitude=10.705247&longitude=-71.587554&start=2016&end=2025&format=JSON",
+      "sha256": "5bb904f4affab1ebd9b589a12bd9f5d7fc60274aecbf0476eedda964e8e25bbd",
+      "cache_hit": true,
+      "file": "/home/user/Katouwa-Data/website/data/raw/cache/c01fd001f7a16bb326eaa41ae96eaf29a7e7f1d9b2075e39044529c9d45b703f.json"
+    }
+  ],
+  "finished_utc": "2026-11-14T22:05:54.593971+00:00"
+}

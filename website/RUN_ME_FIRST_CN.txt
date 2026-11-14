@@ -1,0 +1,18 @@
+KATOUWA 交付版 — 先看这里（2026-11-14）
+
+一、你无需安排开发：Python pipeline、Streamlit 界面、NASA API 接口、9 项离线测试、2 分钟英文 Pitch、评委问答、NASA 参赛页面文案，已经在这个压缩包里。
+
+二、两个红树林坐标只保留 P1 (10.705247, -71.587554)、P2 (10.700986, -71.581910)，不用其他旧点。
+
+三、打开 Mac 的 Terminal，cd 到解压后的 KATOUWA_Agent_Pipeline 文件夹，然后执行：
+    bash START_KATOUWA_MAC.command
+
+四、在打开的网页左侧选择“Agent-verified NASA output” → 展开“Collect real NASA vegetation data” → 选择“Both P1 + P2 (compare locations)” → 点“Run NASA MODIS data agent”。
+
+五、IMPORTANT：本次 ChatGPT 工作环境无法解析 NASA API 域名，因此压缩包还没有真实 NASA 数值；任何红树林变坏了多少的数字都还没有得到科学验证。
+
+六、如果你的现场网络也不通，只能选“SYNTHETIC interface test”展示代码交互，并明确告诉评委它是模拟值。此时不要声称结果已被 NASA 数据证实。
+
+七、要获得官方参赛资格，最终项目页面、团队身份、确认提交仍需有账号权限的人处理。不要把这个技术交付误认为已经上传到 NASA。
+
+完整说明 README_CN.md / README.md；英文演讲 PITCH_2MIN_EN.md；评委问答 JUDGE_QA_EN.md；项目页面 TEAM_PAGE_EN.md。

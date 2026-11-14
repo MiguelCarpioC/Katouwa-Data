@@ -1,0 +1,15 @@
+KATOUWA / 5页内容版，默认不依赖 NASA 网络连接。
+
+打开网站后默认选择 Guided showcase (illustrative data)，每一页都有内容。
+数据图表：模拟数据，明确标为 SYNTHETIC，不能作为比赛科学结论。
+研究内容：2007论文摘要，团队提交的原始照片；照片具体拍摄地和公开授权待确认。
+如果NASA下载成功，可在左侧切换 NASA retrieved & quality-filtered。
+
+Mac启动：
+1. 将本ZIP解压到Downloads（建议新目录）
+2. cd ~/Downloads/KATOUWA_SHOWCASE_READY/KATOUWA_Agent_Pipeline
+3. bash START_KATOUWA_MAC.command
+4. 浏览器 http://localhost:8501
+
+如果旧网站仍在占用8501，请先在旧网站的Terminal按Ctrl+C关闭旧服务。
+如果需要，运行 .venv/bin/python -m streamlit run app.py --server.port 8502

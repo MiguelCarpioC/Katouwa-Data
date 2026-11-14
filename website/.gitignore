@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+.venv/
+data/raw/ca_bundle_with_emsign.pem

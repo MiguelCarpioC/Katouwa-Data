@@ -1,0 +1,9 @@
+{
+  "total_input_rows": 240,
+  "accepted_rows": 240,
+  "rejected_rows": 0,
+  "mangrove_cover_verified": false,
+  "spatial_extent_mapping_performed": false,
+  "community_observations_included": false,
+  "corrected_for_temporal_autocorrelation": false
+}
